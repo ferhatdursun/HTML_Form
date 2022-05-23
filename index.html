@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div>
+        <div class="content">
+            <form action="result.html">
+                <h1>Clarusway Survey Form</h1>
+                <p>Thank you for taking the time to help us improve the platform</p>
+                <label for="name">
+                    <h3>Name</h3>
+                </label>
+
+                <input type="text" id="name" name="Name" value="" placeholder="Enter your name">
+
+                <label for="surname">
+                    <h3>Surname</h3>
+                </label>
+
+                <input type="text" id="surname" name="Surname" value="" placeholder="Enter your Surname">
+                <br>
+                <br>
+                <label for="email">
+                    <h3>Email</h3>
+                </label>
+
+                <input type="text" id="email" name="Email" value="" placeholder="user@gmail.com">
+                <br>
+                <br>
+                <label for="role">
+                    <h3>Which option best describes your current role?</h3>
+                </label>
+
+                <select name="role" id="role">
+                    <option value="" disabled selected hidden>Select current role</option>
+                    <!-- Select icin placeholder ekleme-->
+                    <option value="Footballer">Footballer</option>
+                    <option value="Musician">Musician</option>
+                    <option value="Developer">Developer</option>
+                </select>
+                <br>
+                <br>
+                <label>
+                    <h3>Would you recommend Clarusway to a friend?</h3>
+                </label>
+
+                <input type="radio" id="recommend" name="Recommend" value="Definitely, Yes" checked>
+                <label for="recommend">Definitely, Yes</label>
+                <br>
+                <input type="radio" id="maybe" name="Recommend" value="Maybe">
+                <label for="maybe">Maybe</label>
+                <br>
+                <input type="radio" id="Not sure" name="Recommend" value="Not sure">
+                <label for="not sure">Not sure</label>
+                <br>
+                <input type="radio" id="No" name="Recommend" value="Definitely, No">
+                <label for="No">Definitely, No</label>
+                <br>
+                <br>
+                <label>
+                    <h3>What is your favorite feature of Clarusway</h3>
+                </label>
+
+                <select name="feature" id="feature">
+                    <option value="" disabled selected hidden>Select an option</option>
+                    <option value="innovator">innovator</option>
+                    <option value="Trustworthy">Trustworthy</option>
+                    <option value="Cheap">Cheap</option>
+                </select>
+                <br>
+                <br>
+                <label>
+                    <h3>What would you like to see improved?(Check all that apply)</h3>
+                </label>
+                <br>
+                <input type="checkbox" name="Front" id="improved" value="Front-end Projects">
+                <label for="Front">Front-end Projects</label>
+                <br>
+                <br>
+                <input type="checkbox" id="Back" name="improved" value="Back-end Projects">
+                <label for="Back">Back-end Projects</label>
+                <br>
+                <br>
+                <input type="checkbox" id="Data" name="improved" value="Data Science">
+                <label for="Data">Data Science</label>
+                <br>
+                <br>
+                <input type="checkbox" id="courses" name="improved" value="Additional Courses">
+                <label for="courses">Additional Courses</label>
+                <br>
+                <br>
+                <label for="yorum">
+                    <h3>Any comments or suggestions?</h3>
+                </label>
+                <textarea name="yorum" id="yorum" cols="30" rows="3" maxlength="100"
+                    placeholder="Enter your comment here.. Thanxs for your comment" style="overflow:scroll"></textarea>
+                <!-- style="overflow:scroll;veya auto" textarea nin icerisine  birseyler girildikten sonra o kücük sayfayi asagi yukari kaydirmak icin kullaniliyor.-->
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
